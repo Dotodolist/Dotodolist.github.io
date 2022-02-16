@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+}
+
+
+.strike {
+  text-decoration: line-through;
+}
+
+td{
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.todo-input{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 1rem;
+}
+
+.header{
+	background: #344E41;
+	color: white;
+	padding: 2rem;
+	text-align: center;
+	font-size: 30px;
+	
+}
+
+.todoTable-block{
+  margin-top: 1rem;
+}
+
+
+.pagination-pages{
+  text-align: right;
+}
+
+.pagination-pages > * {
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.material-icons{
+  cursor: pointer;
+}
+
+::-ms-input-placeholder{
+  color: #000000;
+}
+
+::-webkit-input-placeholder{
+  color: #000000;
+}
+
+::placeholder{
+  color: #000000;
+}
+
+input {
+  color: #000000;
+}
+
+
+body{
+	display: grid;
+	align-content: center;
+	background: #DAD7CD;
+}
+
+.todo-block{
+  /*border: 1px solid #ff8e72;*/
+  padding: 1rem;
+  border-radius: 20px;
+  color: #000000;
+}
+
+#todoTable{
+	table-layout: auto;
+	width: 100%;
+	padding: 0.5rem;
+}
+
+@media screen and (max-width: 767px) {
+  /* for mobile or small screen device */
+  #todoTable{
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* for tablets or laptops or desktops */
+  .todo-grid-parent{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    column-gap: 1rem;
+  }
+}
+
+.todo-overlay{
+  width: 100vw;
+  height: 100vh;
+  background-color: #F7FFF7;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-100vw);
+  transition: transform 250ms;
+  z-index: 2;
+}
+
+.todo-modal{
+  min-width: 50vw;
+  height: 50vh;
+  /*border: 1px solid green;*/
+  /*background-color: #ffd6cc;*/
+}
+
+.todo-modal-close-btn{
+  background-color: red;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: white;
+  font-weight: bold;
+}
+
+.slidedIntoView {
+  transform: translateX(0);
+  transition: transform 650ms;
+}
+
+#todoTable tr:nth-child(even) {
+  background-color: #9BC1BC;
+}
+
+button{
+  background-color: #F0EFEB;
+  color: #a11e12;
+  border: 1px outset #EDDCD2;
+}
+
+button:active{
+  border: 1px inset #bdbdbd;
+}
+
+button:hover{
+  background-color: #bdbdbd;
+}
+
+.chevron{
+  transform: translateY(0.4rem);
+}
+
+.itemsPerPage{
+  text-align: right;
+  margin-bottom: 0.5rem;
+}
